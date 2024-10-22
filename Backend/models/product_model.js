@@ -1,4 +1,4 @@
-import timestamps from "mongoo/lib/plugins/timestamps";
+import timestamps from "mongoo/lib/plugins/timestamps.js";
 import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema(
@@ -16,6 +16,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // add more data
   },
   {
     timestamps: true, // createdAt, updatedAt
